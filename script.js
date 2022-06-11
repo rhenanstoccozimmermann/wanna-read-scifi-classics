@@ -8,7 +8,7 @@ function handleResponsiveness() {
   let OS = 'Linux';
   if (navigator.userAgent.indexOf('Win') !== -1) { OS = 'Windows'; }
   const width = window.innerWidth;
-  if (OS === 'Windows' && width > 1200) { document.getElementsByTagName('html')[0].style.fontSize = '14px'; }
+  if (OS === 'Windows' && width > 1200) { document.getElementsByTagName('html')[0].style.fontSize = '13px'; }
   else if (OS === 'Windows' && width > 700) { document.getElementsByTagName('html')[0].style.fontSize = '10px'; }
   else if (OS === 'Windows' && width <= 700) { document.getElementsByTagName('html')[0].style.fontSize = '6px'; }
 }
