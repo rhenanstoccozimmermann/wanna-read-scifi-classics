@@ -4,6 +4,31 @@ import removeReadBook from './helpers/removeReadBook.js';
 import removeAllReadBooks from './helpers/removeAllReadBooks.js';
 import booksList from './services/booksList.js';
 
+function handleResponsiveness() {
+  let OS = 'Linux';
+  if (navigator.userAgent.indexOf('Win') !== -1) { OS = 'Windows'; }
+  const width = window.innerWidth;
+  if (OS === 'Windows' && width > 1200) { document.getElementsByTagName('html')[0].style.fontSize = '14px'; }
+  else if (OS === 'Windows' && width > 700) { document.getElementsByTagName('html')[0].style.fontSize = '10px'; }
+  else if (OS === 'Windows' && width <= 700) { document.getElementsByTagName('html')[0].style.fontSize = '6px'; }
+}
+
+window.addEventListener('resize', handleResponsiveness);
+
+const message = document.querySelector('.message-container');
+
+function showMessage() {
+  message.style.display = 'block';
+}
+
+function hideMessage() {
+  message.style.display = 'none';
+}
+
+const privacyNotice = document.querySelector('.privacy-notice');
+privacyNotice.addEventListener('mouseover', showMessage);
+privacyNotice.addEventListener('mouseout', hideMessage);
+
 function creatImageElement(imageSource) {
   const img = document.createElement('img');
   img.className = 'book-cover';
@@ -74,21 +99,8 @@ function cleanReadBooks() {
 const removeAllBtn = document.querySelector('.clean-list-btn');
 removeAllBtn.addEventListener('click', cleanReadBooks);
 
-const message = document.querySelector('.message-container') ;
-
-function showMessage(){
-  message.style.display = 'block';
-}
-
-function hideMessage(){
-  message.style.display = 'none';
-}
-
-const privacyNotice = document.querySelector('.privacy-notice') ;
-privacyNotice.addEventListener('mouseover', showMessage);
-privacyNotice.addEventListener('mouseout', hideMessage);
-
 window.onload = () => {
+  handleResponsiveness();
   getBooks();
   setReadBooks();
 };
