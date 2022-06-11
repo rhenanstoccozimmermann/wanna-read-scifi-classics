@@ -1,0 +1,252 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2f3438;
+  font-family: 'Epilogue', sans-serif;
+  line-height: 1rem;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 3.75rem;
+  background-color: #394a7a;
+  justify-content: left;
+  align-items: center;
+}
+
+.header-title {
+  padding-left: 1.8rem;
+  color: #DDDDDD;
+  font-size: 1.8rem;
+}
+
+.privacy-notice {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.8rem;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+}
+
+#message-icon {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.message-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: auto;
+  padding: 0.5rem;
+  background-color: rgb(249, 249, 151);
+  border: 1px solid #000000;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.message {
+  display: block;
+  margin: 0.65rem;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.books {
+  display: flex;
+  margin: 2.5rem 0;
+  justify-content: center;
+  flex-basis: 70%;
+  flex-wrap: wrap;
+}
+
+.book {
+  display: flex;
+  width: 12.5rem;
+  height: auto;
+  margin: 0.3125rem;
+  border-radius: 5px;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow: 0.625rem 0.3125rem 0.3125rem #131418;
+  transition: all .2s ease-in-out;
+}
+
+.book:hover {
+  box-shadow: 1.25rem 0.625rem 0.625rem #131418;
+  transform: scale(1.1);
+}
+
+.book-cover {  
+  width: 100%;
+  height: 18.75rem;
+}
+
+.book-info {
+  display: flex;
+  padding: 0.625rem;
+  color: #ffffff;
+  background-color: #25262b;
+  font-size: 0.75rem;
+  text-align: left;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.add-btn {
+  margin: 0;
+  padding: 0.625rem;
+  color: #ffffff;
+  background-color: #456e72;
+  border: 0;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.add-btn-read {
+  background-color: #394a7a;
+}
+
+.aside-container {
+  display: flex;
+  height: auto;
+  background-image: url('./images/space.png');
+  justify-content: center;
+  align-items: center;
+  flex-basis: 32%;
+  flex-direction: column;
+}
+
+.aside-box {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 32%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aside-content {
+  display: flex;
+  width: 15.65rem;
+  color: #ffffff;
+  font-size: 0.8125rem;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.aside-content:before {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	content: "";
+	pointer-events: none;
+	border: solid transparent;
+  border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: rgba(255, 255, 255, 0.1);
+	border-width: 7.8125rem;
+	margin-left: -7.8125rem;
+}
+
+.aside-content:after {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	content: "";
+	pointer-events: none;
+	border: solid transparent;
+  border-color: rgba(136, 183, 213, 0);
+	border-top-color: rgba(255, 255, 255, 0.1);
+	border-width: 7.8125rem;
+	margin-left: -7.8125rem;
+}
+
+.aside-img {
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+.aside-title-container { 
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-title {
+  padding-right: 0.3125rem;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+#aside-icon {
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+.aside-text {
+  width: 80%;
+  margin: 1rem auto;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.clean-list-btn {
+  width: 10.625rem;
+  height: 2.1875rem;
+  margin: 1rem auto;
+  color: #ffffff;
+  font-size: 0.75rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 1200px) {
+
+  html {
+    font-size: 10.5px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  html {
+    font-size: 5px;
+  }
+
+}
