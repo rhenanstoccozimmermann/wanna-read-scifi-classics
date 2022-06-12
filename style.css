@@ -147,7 +147,7 @@ header {
   display: flex;
   width: 15.65rem;
   color: #ffffff;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   justify-content: center;
   align-items: center;  
   flex-direction: column;
@@ -169,8 +169,8 @@ header {
 	border: solid transparent;
   border-color: rgba(136, 183, 213, 0);
 	border-bottom-color: rgba(255, 255, 255, 0.1);
-	border-width: 7.8125rem;
-	margin-left: -7.8125rem;
+	border-width: 10.425em;
+	margin-left: -10.425em;
 }
 
 .aside-content:after {
@@ -184,8 +184,8 @@ header {
 	border: solid transparent;
   border-color: rgba(136, 183, 213, 0);
 	border-top-color: rgba(255, 255, 255, 0.1);
-	border-width: 7.8125rem;
-	margin-left: -7.8125rem;
+	border-width: 10.425em;
+	margin-left: -10.425em;
 }
 
 .aside-img {
@@ -204,7 +204,6 @@ header {
 .aside-title {
   padding-right: 0.3125rem;
   color: #ffffff;
-  font-size: 0.75rem;
   font-weight: bold;
 }
 
@@ -216,13 +215,12 @@ header {
 .aside-text {
   width: 80%;
   margin: 1rem auto;
-  font-size: 0.75rem;
   text-align: left;
 }
 
 .clean-list-btn {
-  width: 10.625rem;
-  height: 2.1875rem;
+  width: 14em;
+  height: 3em;
   margin: 1rem auto;
   color: #ffffff;
   font-size: 0.75rem;
