@@ -10,10 +10,13 @@ function handleResponsiveness() {
   const width = window.innerWidth;
   if (OS === 'Windows' && width > 1200) {
     document.getElementsByTagName('html')[0].style.fontSize = '14px';
-    document.getElementsByClassName('aside-content')[0].style.width = '11.7375rem';
-    document.getElementsByClassName('aside-content')[0].style.fontSize = '0.5625rem';
-    document.getElementById('aside-icon').style.fontSize = '0.5625rem';
-    document.getElementsByClassName('clean-list-btn')[0].style.fontSize = '0.5625rem';
+    document.getElementsByClassName('aside-content')[0].style.width = '13.4143rem';
+    document.getElementsByClassName('aside-content')[0].style.fontSize = '0.6428rem';
+    document.getElementById('aside-icon').style.fontSize = '0.6428rem';
+    document.getElementsByClassName('aside-text')[0].style.margin = '0.8571rem auto';
+    document.getElementsByClassName('aside-text')[1].style.margin = '0.8571rem auto';
+    document.getElementsByClassName('clean-list-btn')[0].style.margin = '0.8571rem auto';
+    document.getElementsByClassName('clean-list-btn')[0].style.fontSize = '0.6428rem';
   }
   else if (OS === 'Windows' && width > 700) { document.getElementsByTagName('html')[0].style.fontSize = '10px'; }
   else if (OS === 'Windows' && width <= 700) { document.getElementsByTagName('html')[0].style.fontSize = '6px'; }
